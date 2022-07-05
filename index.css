@@ -65,12 +65,7 @@ h1 {
   display: block;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-}
+
 .inlineList {
   display: flex;
   justify-content: space-between;
@@ -131,10 +126,12 @@ h1 {
   padding-bottom: 35px;
 }
 .row {
+    width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 .row p {
   width: 60%;
@@ -170,5 +167,67 @@ margin: auto;
     font-weight: 700;
     font-size: 1.5rem;
     text-align:justify;
+}
+.img-col{
+    width: 40%;
+}
+.img-col img{
+    width: 100%;
+}
+.img-col:first-child{
+    margin-right: 20px;
+}
+.videoWrapper{
+    width: 100%;
+}
+.videoWrapper iframe{
+    width: 100%;
+}
 
+
+.container-ellen{
+    display: flex;
+    width: 100%;
+}
+.slide-ellen{
+    padding: 0px 40px;
+    width: 55%;
+}
+.slide-ellen img{
+    width: 100%;
+}
+.ellen-p{
+    width: 50%;
+    color: rgba(0, 0, 0, 0.699);
+    font-size: 16px;
+    line-height: 30px;
+    flex-wrap: wrap;
+    margin-top: -20px;
+    margin-left: -10px;
+}
+.ellen-p strong{
+    display: block;
+    color: black;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.mosaic-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.mosaic-left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-right: 15px;
+}
+.mosaic-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+.mosaic-container img{
+    width: 100%;
 }
