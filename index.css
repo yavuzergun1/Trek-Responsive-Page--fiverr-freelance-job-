@@ -5,13 +5,13 @@ body {
   font-family: "Roboto", sans-serif;
   color: #000;
   font-weight: 300;
+  margin: 0px;
 }
-post-wrapper {
-  padding-top: 0px;
-}
+
 .backgroundImage {
   background-position: center;
   background-size: cover;
+  padding: 0px;
 }
 .blogHeader {
   color: #fff;
@@ -36,38 +36,37 @@ post-wrapper {
   margin-left: auto;
 }
 
-.blogHeader h1 {
-  display: inline-flex;
-  justify-content: center;
+h1 {
+  font-family: Avalon-Bold, NotoSansJP-Bold, NotoSansKR-Bold, NotoSansSC-Bold,
+    NotoSansTC-Bold, Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  line-height: 80px;
+  font-weight: 900;
+  display: flex;
   justify-content: center;
   flex-direction: column;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
+  transform: translateY(-80%);
+  width: 98%;
   text-align: center;
 }
+
 .text-center {
   text-align: center !important;
 }
-h1 {
-  font-family: Avalon-Bold, NotoSansJP-Bold, NotoSansKR-Bold, NotoSansSC-Bold,
-    NotoSansTC-Bold, Arial, Helvetica, sans-serif;
-  font-size: 60px;
-  line-height: 80px;
-  font-weight: 800;
-}
 
-.blogHeader h1 .introText {
+.introText {
+  width: 90%;
   font-size: 24px;
   line-height: 30px;
-  font-weight: 600;
-  display: block;
+  font-weight: 800;
+  transform: translateX(20px);
 }
 
 .inlineList {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   padding-top: 30px;
@@ -109,14 +108,10 @@ h1 {
   letter-spacing: 1px;
 }
 .postDate {
-  align-self: center;
   font-family: "Roboto", sans-serif;
   font-size: 11px;
   font-weight: 700;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 5px;
+  padding: 5px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -157,6 +152,7 @@ h1 {
   font-size: 12px;
   margin-top: 5px;
   color: rgba(0, 0, 0, 0.699);
+  line-height: 30px;
 }
 .row strong {
   display: block;
@@ -195,6 +191,7 @@ h1 {
   color: rgba(0, 0, 0, 0.699);
   font-size: 12px;
   margin-top: 5px;
+  line-height: 30px;
 }
 .ellen-p {
   width: 50%;
@@ -271,21 +268,48 @@ h1 {
   }
 
   @media (max-width: 770px) {
-    .row p{
+    h1 {
+      font-size: 40px;
+    }
+    .introText {
+      font-size: 20px;
+    }
+    .inlineList {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 10%;
+    }
+    .postDate {
+      width: 100%;
+    }
+    .row p {
       width: 90%;
     }
+
+    .ellen-p, .slide-ellen p{
+      width: 100%;
+      padding-left: 20px;
+    }
     .mosaic-container {
+      width: 100%;
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
     .mosaic-left,
     .mosaic-right {
       width: 100%;
+      margin: 0px;
     }
   }
 
   @media (max-width: 576px) {
+    .flexContentPadding {
+      padding: 10px;
+    }
     .row {
       justify-content: flex-start;
+
     }
     .row p {
       width: 100%;
@@ -294,10 +318,19 @@ h1 {
       display: flex;
       flex-direction: column;
     }
+    .slide-ellen{
+      padding: 0px;
+    }
+    .graph{
+      width: 100%;
+    }
     .img-col {
       width: 100%;
     }
-    .madone{
+    .img-col:first-child {
+      margin: 0px;
+    }
+    .madone {
       flex-direction: column;
     }
   }
