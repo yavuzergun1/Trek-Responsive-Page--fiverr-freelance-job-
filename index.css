@@ -159,7 +159,8 @@ margin: auto;
 .slide p{
     font-size: 12px;
     margin-top: 5px;
-
+    color: rgba(0, 0, 0, 0.699);
+    
 }
 .row strong{
     display: block;
@@ -196,6 +197,11 @@ margin: auto;
 .slide-ellen img{
     width: 100%;
 }
+.slide-ellen p{
+  color: rgba(0, 0, 0, 0.699);
+  font-size: 12px;
+  margin-top: 5px;
+}
 .ellen-p{
     width: 50%;
     color: rgba(0, 0, 0, 0.699);
@@ -230,4 +236,16 @@ margin: auto;
 }
 .mosaic-container img{
     width: 100%;
+    margin-bottom: 15px;
+}
+.mads-container{
+  width: 90%;
+}
+.graph{
+  display: inline;
+  width: 50%;
+}
+.graph-container{
+  display: flex;
+  justify-content: space-between;
 }
