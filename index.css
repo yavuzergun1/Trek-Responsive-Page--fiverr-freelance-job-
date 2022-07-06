@@ -304,6 +304,9 @@ h1 {
   }
 
   @media (max-width: 576px) {
+   h1{
+    width: 100%;
+transform: translateX(-15px);   }
     .flexContentPadding {
       padding: 10px;
     }
