@@ -286,7 +286,8 @@ h1 {
       width: 90%;
     }
 
-    .ellen-p, .slide-ellen p{
+    .ellen-p,
+    .slide-ellen p {
       width: 100%;
       padding-left: 20px;
     }
@@ -304,15 +305,15 @@ h1 {
   }
 
   @media (max-width: 576px) {
-   h1{
-    width: 100%;
-transform: translateX(-15px);   }
+    h1 {
+      width: 100%;
+      transform: translateX(-15px);
+    }
     .flexContentPadding {
       padding: 10px;
     }
     .row {
       justify-content: flex-start;
-
     }
     .row p {
       width: 100%;
@@ -321,10 +322,10 @@ transform: translateX(-15px);   }
       display: flex;
       flex-direction: column;
     }
-    .slide-ellen{
+    .slide-ellen {
       padding: 0px;
     }
-    .graph{
+    .graph {
       width: 100%;
     }
     .img-col {
